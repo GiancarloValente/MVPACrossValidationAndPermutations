@@ -117,11 +117,11 @@ for idfigure = 1:2
                 if ith == 2 && iFold == 1
                     temp = ylim;
                     if idfigure==1
-                        textann     = ['Cross-validation Type-I error, ' algused{iAlg}];
+                        textann     = ['Cross-validation Type-I error rate, ' algused{iAlg}];
                     else
-                        textann     = ['Repeated Cross-validation Type-I error, ' algused{iAlg}];
+                        textann     = ['Repeated Cross-validation Type-I error rate, ' algused{iAlg}];
                     end
-                    ha = annotation('textbox',[.2 .95 .6 .05],'String',textann);
+                    ha = annotation('textbox',[.15 .95 .65 .05],'String',textann);
                     ha.FontSize = 20;
                     ha.FontWeight = 'bold';
                     ha.HorizontalAlignment = 'center';
