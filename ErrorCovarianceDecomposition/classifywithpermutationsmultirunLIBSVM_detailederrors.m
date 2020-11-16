@@ -1,4 +1,11 @@
 function [err,eP,varargout] = classifywithpermutationsmultirunLIBSVM_detailederrors(x,l,Splits,Params)
+% code to run LIBSVM with pre-computed kernel. Details on the error at each trial are given
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 eP                          = [];
 eP1                         = [];

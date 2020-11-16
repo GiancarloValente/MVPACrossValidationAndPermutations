@@ -1,5 +1,11 @@
 function [X,runidx]  = generateautocorrelateddata(Params,varargin)
-
+% generate data where consecutive examples have a given correlationS
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 
 % creating the covariance matrix, with bands

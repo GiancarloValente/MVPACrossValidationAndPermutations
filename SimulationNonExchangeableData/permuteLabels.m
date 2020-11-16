@@ -1,5 +1,11 @@
 function  [lp]                  = permuteLabels(l,Params,Splits)
 % shadowing the original version to implement randomization rather than permutation  
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 nSplits                         = numel(Splits);
 runSizes                        = histcounts(l(:,2),[1:Params.nRuns+1]);

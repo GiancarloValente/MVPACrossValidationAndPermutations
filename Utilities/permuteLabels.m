@@ -5,6 +5,14 @@ function  [lp]                  = permuteLabels(l,Params,Splits)
 %                     2) withinsplit: within each split, randomize training and testing separately
 %                     3) withinsplittrain: within each split, randomize only training data
 %                     4) withinsplittest: within each split, randomize only test data
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
+
+
 nSplits                         = numel(Splits);
 runSizes                        = histcounts(l(:,2),[1:Params.nRuns+1]);
 if all(runSizes == runSizes(1))

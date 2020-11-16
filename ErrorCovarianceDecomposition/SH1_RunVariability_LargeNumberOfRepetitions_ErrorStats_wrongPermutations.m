@@ -1,4 +1,11 @@
 function SH1_RunVariability_LargeNumberOfRepetitions_ErrorStats_wrongP(algname)
+% simulations to estimate the error covariance matrix under H0 using an invalid test (permuting during each cross-validation iteration)
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 addmexlibraries
 

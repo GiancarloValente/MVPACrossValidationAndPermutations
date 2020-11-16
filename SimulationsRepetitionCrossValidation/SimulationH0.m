@@ -1,4 +1,11 @@
 function SimulationH0_v1(algname)
+% simulations under the null hypothesis
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 addmexlibraries
 

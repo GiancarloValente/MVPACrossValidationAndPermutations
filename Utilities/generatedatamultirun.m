@@ -1,6 +1,11 @@
 function [x,l]                  = generatedatamultirun(Params)
 % code to generate simulated data according to the values provided in Params
-
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 nruns                           = Params.nRuns;
 nsamplesrunClass1               = floor(Params.nSamplesPerClass1./nruns);

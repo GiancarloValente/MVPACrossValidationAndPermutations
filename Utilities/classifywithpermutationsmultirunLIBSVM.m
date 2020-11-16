@@ -1,4 +1,11 @@
 function [err,eP,varargout] = classifywithpermutationsmultirunLIBSVM(x,l,Splits,Params)
+% classify using LIBSVM with pre-computed Kernel
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 eP                          = [];
 eP1                         = [];

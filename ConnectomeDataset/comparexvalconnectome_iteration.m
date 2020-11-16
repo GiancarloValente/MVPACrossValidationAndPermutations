@@ -1,4 +1,11 @@
 function [E,Er,p,prep]  = comparexvalconnectome_iteration(features,labels,EVNames,class1,class2,varargin)
+% Evaluation of the different cross-validations schemes on the WU-Minn human connectome project database
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 numberOfSubjectsPerBatch        = 20;
 Folds                           = [2 5 10 20];

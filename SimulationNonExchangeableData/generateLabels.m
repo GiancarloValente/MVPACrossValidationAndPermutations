@@ -1,4 +1,11 @@
 function [l] = generateLabels(Params)
+% generate labels with three designs: random, blocked or alternated
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 l   = ones(Params.nSamplesperRun,Params.nRuns);
 

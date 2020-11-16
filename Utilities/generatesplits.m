@@ -1,6 +1,14 @@
 function [Splits]               = generatesplits(Params,l)
 % dividing the available runs in training-testing. If multiple runs are
 % available, then the cross-validation is done on a run-level
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
+
+
 
 nSamplesClass1                  = Params.nSamplesPerClass1;
 nSamplesClass2                  = Params.nSamplesPerClass2;

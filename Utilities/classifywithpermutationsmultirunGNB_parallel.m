@@ -1,5 +1,12 @@
 function [err,eP,varargout] = classifywithpermutationsmultirunGNB_parallel(x,l,Splits,Params)
 % parallelized implementation of GNB permutations based on Ontivero-Ortega et al. Neuroimage 2017. Please note that the permutations are correct only if the design is balanced within each run.
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
+
 
 eP                          = [];
 eP1                         = [];

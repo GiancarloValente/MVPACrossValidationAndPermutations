@@ -1,4 +1,12 @@
 function [err,eP,varargout] = classifywithpermutationsmultirunLiblinear(x,l,Splits,Params)
+% Code to classify using LibLinear 
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
+
 
 eP                          = [];
 eP1                         = [];

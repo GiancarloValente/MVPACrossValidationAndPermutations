@@ -1,7 +1,14 @@
 function Params = initializeparams(varargin)
+% Code to set the defaults of the simulations
+%
+% Copyright (c) Giancarlo Valente 2020
+% giancarlo.valente@maastrichtuniversity.nl
+%
+% Giancarlo Valente licenses this file to you under the MIT License.
+% See the LICENSE file for more information
 
 
-% setting defaults
+
 
 Params.nDatasets                        = 30;  % nDatasets are generated
 Params.nVoxels                          = 100; % number of voxels (total)
