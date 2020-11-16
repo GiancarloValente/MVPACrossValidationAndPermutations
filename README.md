@@ -23,4 +23,4 @@ The code to prepare the data, run the analyses and display the results on the 3 
 
 The code relies on the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) implementation for the SVM and the [LibLinear](https://www.csie.ntu.edu.tw/~cjlin/liblinear/) implementation for L2-regularized logistic regression. Download and install them prior to running the current analyses, making sure their folders are added to the path.
 
-For the analyses of the Human Connectome data,  a [cifti reader](https://github.com/Washington-University/cifti-matlab) should be added to the path.
+For the analyses of the Human Connectome Project data,  a [cifti reader](https://github.com/Washington-University/cifti-matlab) should be added to the path.
