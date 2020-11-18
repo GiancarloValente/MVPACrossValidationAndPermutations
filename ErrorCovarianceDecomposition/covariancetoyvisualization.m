@@ -1,4 +1,4 @@
-clear
+clear variables
 
 xvalcode  = zeros(12,12);
 
