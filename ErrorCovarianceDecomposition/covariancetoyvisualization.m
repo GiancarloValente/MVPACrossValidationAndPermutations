@@ -84,11 +84,11 @@ xlimval = xlim;
 ylimval = ylim;
 
 positions = linspace(-.1,1.25,6); 
-strings = {['\textsl{Within} iteration' newline '\textbf{Same Unit}'],...
-    ['\textsl{Within} iteration' newline '\textbf{Same Fold}'],...
-    ['\textsl{Within} iteration' newline '\textbf{Different Fold}'],...
-    ['\textsl{Between} iterations' newline '\textbf{Same Unit}'],...
-    ['\textsl{Between} iterations' newline '\textbf{Different Units}']};
+strings = {['\textsl{Within} repetition' newline '\textbf{Same Unit}'],...
+    ['\textsl{Within} repetition' newline '\textbf{Same Fold}'],...
+    ['\textsl{Within} repetition' newline '\textbf{Different Fold}'],...
+    ['\textsl{Between} repetitions' newline '\textbf{Same Unit}'],...
+    ['\textsl{Between} repetitions' newline '\textbf{Different Units}']};
 for idx = 1:5
     rectangle('position',[positions(idx) -.05 xstep xstep],...% 1.23
         'FaceColor',colorcode(idx,:),'EdgeColor',colorcode(idx,:)*.5);
@@ -105,19 +105,19 @@ ylim(ylimval+[-0.15 +0.15]);
 
 
 annotation('doublearrow',[.1 .1],[.5 .78]) % 0.12
-h2 = text(-0.12,.7,'\textbf{Iteration 1}','interpreter','latex','fontsize',18,'Fontweight','bold'); %-.1
+h2 = text(-0.12,.7,'\textbf{Repetition 1}','interpreter','latex','fontsize',18,'Fontweight','bold'); %-.1
 set(h2,'rotation',90)
 
 annotation('doublearrow',[.1 .1],[.5 .78]-.3)
-h2 = text(-0.12,.2,'\textbf{Iteration 2}','interpreter','latex','fontsize',18,'Fontweight','bold'); %-.1
+h2 = text(-0.12,.2,'\textbf{Repetition 2}','interpreter','latex','fontsize',18,'Fontweight','bold'); %-.1
 set(h2,'rotation',90)
 
 
 annotation('doublearrow',[.15 .49],[.83 .83]) % .813
-text(.17,1.18,'\textbf{Iteration 1}','interpreter','latex','fontsize',18,'Fontweight','bold'); % 1.17
+text(.13,1.18,'\textbf{Repetition 1}','interpreter','latex','fontsize',18,'Fontweight','bold'); % 1.17
 
 annotation('doublearrow',[.51 .84],[.83 .83])
-text(.65,1.18,'\textbf{Iteration 2}','interpreter','latex','fontsize',18,'Fontweight','bold');
+text(.63,1.18,'\textbf{Repetition 2}','interpreter','latex','fontsize',18,'Fontweight','bold');
 
 tmp = linspace(0.03,.945,12);
 runcode = repmat([1:6],1,2);
@@ -130,14 +130,14 @@ for idx = 1:12
     text(-.04,tmp(idx),num2str(runcode(idx)),'Fontsize',15,'interpreter','latex')
 end
 
-annotation('textbox',[.08 .895 .2 .03],'String','\textsl{Iteration 1}:','interpreter','latex', 'VerticalAlignment','Middle',...
+annotation('textbox',[.08 .895 .2 .03],'String','\textsl{Repetition 1}:','interpreter','latex', 'VerticalAlignment','Middle',...
     'horizontalalignment','center','fontsize',18,'linestyle','None');
 
 annotation('textbox',[.25 .875 .23 .05],'String',{ ...
     '\textsl{Fold 1}: 1 2 3'; '\textsl{Fold 2}: 4 5 6'},'interpreter','latex', 'VerticalAlignment','Middle',...
     'horizontalalignment','center','fontsize',16,'linestyle','None');
 
-annotation('textbox',[.53 .895 .2 .03],'String','\textsl{Iteration 2}:','interpreter','latex', 'VerticalAlignment','Middle',...
+annotation('textbox',[.53 .895 .2 .03],'String','\textsl{Repetition 2}:','interpreter','latex', 'VerticalAlignment','Middle',...
     'horizontalalignment','center','fontsize',18,'linestyle','None');
 
 annotation('textbox',[.70 .875 .23 .05],'String',{ ...
